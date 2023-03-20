@@ -216,49 +216,94 @@
 
 // Esercizio 11 - Scrivere una funzione che accetti una stringa contenente solo caratteri x e y e ritorni true se il numero delle x è uguale al numero delle y
 
-function checkXY(array) {
+// function checkXY(array) {
 
-	let x = 0;
-	let y = 0;
+// 	let x = 0;
+// 	let y = 0;
 
-	for (let i = 0; i < array.length; i++) {
+// 	for (let i = 0; i < array.length; i++) {
 
-		if (array[i] == 'x' || array[i] == 'X') x++
-		else if (array[i] == 'y' || array[i] == 'Y') y++
+// 		if (array[i] == 'x' || array[i] == 'X') x++
+// 		else if (array[i] == 'y' || array[i] == 'Y') y++
 
-	}
+// 	}
 
-	if (x == y) return true
-	else return false
+// 	if (x == y) return true
+// 	else return false
 
-}
+// }
 
-while (true) {
+// while (true) {
 
-	let check = true
+// 	let check = true
 
-	let string = prompt('Inserire stringa con sole X e Y')
+// 	let string = prompt('Inserire stringa con sole X e Y')
 
-	for (let i = 0; i < string.length; i++) {
+// 	for (let i = 0; i < string.length; i++) {
 
-		if (!/[xyXY]/.test(string[i])) {
+// 		if (!/[xyXY]/.test(string[i])) {
 
-			alert('Riscrivi')
-			check = false
-			break
+// 			alert('Riscrivi')
+// 			check = false
+// 			break
 
-		}
+// 		}
 
-	}
+// 	}
 
-	if (check) {
+// 	if (check) {
 
-		console.log(checkXY(string))
-		break
+// 		console.log(checkXY(string))
+// 		break
 		
-	}
+// 	}
 
-}
+// }
+
+
+// Esercizio EXTRA - Bubble sort
+
+// function bubbleSort(arr){
+// 	let sorted
+	
+// 	while(!sorted){
+// 		sorted = true
+// 		for(let i = 0; i < arr.length; i++){
+// 			if(arr[i] > arr[i+1]){
+// 				let temp;
+// 				temp = arr[i];
+// 				arr[i] = arr[i+1]
+// 				arr[i+1] = temp
+// 				sorted = false
+// 			}
+// 		}
+// 	}
+// 	return arr
+// }
+
+// let array = [13,4,24,67,12,63]
+// console.log(bubbleSort(array))
+
+
+// Esercizio EXTRA - Reverse number
+
+// function reverseNumber(num){
+// 	let result = 0
+// 	let cifra_estratta
+// 	while(num > 0){
+// 		// prendo l'ultima cifra
+// 		cifra_estratta = num % 10
+
+// 		// tolgo ultima cifra
+// 		num = Math.floor(num / 10)
+
+// 		// moltiplico per 10 il numero del risultato + cifra estratta
+// 		result = (result * 10) + cifra_estratta
+// 	}
+// 	return result
+// }
+
+// console.log(reverseNumber(652))
 
 
 
