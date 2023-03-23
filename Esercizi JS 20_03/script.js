@@ -68,6 +68,20 @@
 // }
 
 
+//----------
+
+// function iniziali(string) {
+
+//     let result = string.split(' ')
+//                     .map(el => el[0]+'.')
+//                     .join('')
+//     return result
+    
+// }
+
+// console.log(iniziali('Tizio Caio'));
+
+
 // Esercizio 3 - Scrivere una funzione che , dati 3 numeri, ritorni true se questi 3 numeri possono formare un triangolo. False altrimenti
 
 // function canBeTriangle(a,b,c) {
@@ -171,6 +185,18 @@
 
 // console.log(sum);
 
+//---------
+
+// function stringNum(string) {
+
+//     return string.split('')
+//         .filter( char => Number(char) )
+//         .reduce( (acc, val) => Number(acc) + Number(val) )
+    
+// }
+
+// console.log(stringNum("Ci sono 2 coccodrilli e 1 orangotango, 2 piccoli serpenti e 5 galline"));
+
 
 // Esercizio 8 - Scrivere una funzione che trasformi un numero in ore e minuti. Ad esempio 3014 => 50:14. Devono essere sempre presenti due cifre, sia per le ore che per i minuti
 
@@ -230,6 +256,8 @@
 
 // 	if (x == y) return true
 // 	else return false
+
+    //  return x == y
 
 // }
 
