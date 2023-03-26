@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Average {
     public static void main(String[] args) {
-        // Scrivere un programma che prenda in input un numero, che crei un array di lunghezza pari al numero inserito, che chieda un numero di elementi pari al numero inserito e ritorni il valore massimo inserito
+        // Scrivere un programma che prenda in input un numero, che crei un array di lunghezza pari al numero inserito, che chieda un numero di elementi pari al numero inserito e e ne faccia la media
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Inserisci la lunghezza dell'array dei numeri: ");
