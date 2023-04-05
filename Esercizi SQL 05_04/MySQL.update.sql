@@ -1,0 +1,1 @@
+UPDATE film SET nome = 'Avatar', genere = 'fantasy', locandina = default, anno = 2009 WHERE id = 3;
