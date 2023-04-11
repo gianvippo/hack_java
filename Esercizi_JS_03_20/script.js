@@ -33,6 +33,8 @@
 // console.log(ipotenusa(3, 4));
 
 
+
+
 // Esercizio 2 - Scrivere una funzione che trasformi un nome nelle sue iniziali "Tizio Caio" => T.C.
 
 // function initials(name) {
@@ -82,7 +84,9 @@
 // console.log(iniziali('Tizio Caio'));
 
 
-// Esercizio 3 - Scrivere una funzione che , dati 3 numeri, ritorni true se questi 3 numeri possono formare un triangolo. False altrimenti
+
+
+// Esercizio 3 - Scrivere una funzione che, dati 3 numeri, ritorni true se questi 3 numeri possono formare un triangolo. False altrimenti
 
 // function canBeTriangle(a,b,c) {
 
@@ -92,6 +96,8 @@
 // }
 
 // console.log(canBeTriangle(5,2,3));
+
+
 
 
 // Esercizio 4 - Congettura di Collatz: preso un numero maggiore di 1, se questo è pari dividerlo per due, se dispari moltiplicarlo per 3 e aggiungere 1. Ripetere. Qualunque sia il numero di partenza, l'algoritmo termina sempre ad uno. Scrivere una funzione che implementi l'algoritmo e ritorni un array con il valore calcolato ad ogni iterazione
@@ -121,7 +127,9 @@
 // console.log(collatz(18));
 
 
-// Esercizio 5 - Scrivere una funzione che, assegnato un numero n,  ritorni la successione di fibonacci fino al numero n sottoforma di array.
+
+
+// Esercizio 5 - Scrivere una funzione che, assegnato un numero n, ritorni la successione di fibonacci fino al numero n sottoforma di array.
 // Ad esempio 3 => [1,1,2], 9 => [1,1,2,3,5,8,13,21,34]
 
 // function fibonacci(num) {
@@ -146,6 +154,8 @@
 // console.log(fibonacci(9))
 
 
+
+
 // Esercizio 6 - Scrivere una funzione che, assegnato un numero n, ritorni se è primo
 
 // function primeNumber(num) {
@@ -166,6 +176,8 @@
 // }
 
 // primeNumber(12)
+
+
 
 
 // Esercizio 7 - Scrivere una funzione che assegnata una stringa ritorni la somma delle cifre in essa presenti. Ad esempio "Sono 1 stringa di 6 parole" => 7
@@ -198,6 +210,8 @@
 // console.log(stringNum("Ci sono 2 coccodrilli e 1 orangotango, 2 piccoli serpenti e 5 galline"));
 
 
+
+
 // Esercizio 8 - Scrivere una funzione che trasformi un numero in ore e minuti. Ad esempio 3014 => 50:14. Devono essere sempre presenti due cifre, sia per le ore che per i minuti
 
 // function toHourMinutes(num) {
@@ -209,7 +223,9 @@
 // console.log(toHourMinutes(5100))
 
 
-// Esercizio 9 - Scrivere una funzione che, assegnata una stringa, ritorni l numero di vocali presenti. gestire le maiuscole
+
+
+// Esercizio 9 - Scrivere una funzione che, assegnata una stringa, ritorni il numero di vocali presenti. Gestire le maiuscole
 
 // function vocalCount(array) {
 
@@ -228,6 +244,8 @@
 // console.log(vocalCount('Buonasera sono Massimo d\'Alema'))
 
 
+
+
 // Esercizio 10 - Scrivere una funzione che accetta una stringa e restituisce la parola più lunga
 
 // function mostLongWord(array) {
@@ -238,6 +256,8 @@
 // }
 
 // console.log(mostLongWord('Ciao mamma guarda come mi diverto'))
+
+
 
 
 // Esercizio 11 - Scrivere una funzione che accetti una stringa contenente solo caratteri x e y e ritorni true se il numero delle x è uguale al numero delle y
@@ -289,6 +309,8 @@
 // }
 
 
+
+
 // Esercizio EXTRA - Bubble sort
 
 // function bubbleSort(arr){
@@ -311,6 +333,8 @@
 
 // let array = [13,4,24,67,12,63]
 // console.log(bubbleSort(array))
+
+
 
 
 // Esercizio EXTRA - Reverse number
