@@ -274,4 +274,9 @@ class GianvitoBlogApplicationTests {
 		.extracting("body")
 		.contains("124", atIndex(4));
 	}
+
+	@Test
+	void checkPartialEmail(){
+		assertThat(authorRepository.findSomething("gmail.com")).asList().hasSize(2);
+	}
 }
