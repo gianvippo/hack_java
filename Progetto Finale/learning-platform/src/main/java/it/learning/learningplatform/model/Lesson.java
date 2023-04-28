@@ -2,6 +2,8 @@ package it.learning.learningplatform.model;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -27,6 +29,7 @@ public class Lesson {
 
     @ManyToOne
     @JoinColumn(name = "course_id")
+    @JsonIgnoreProperties("lessons")
     private Course course;
 
     public Lesson() {

@@ -1,6 +1,9 @@
 package it.learning.learningplatform.model;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.AttributeOverride;
 import jakarta.persistence.AttributeOverrides;
@@ -32,7 +35,8 @@ public class Student {
     private String email;
 
     @ManyToMany(mappedBy = "students")
-    private List<Course> courses;
+    @JsonIgnoreProperties("students")
+    private List<Course> courses = new ArrayList<Course>();
 
     public Student() {
     }

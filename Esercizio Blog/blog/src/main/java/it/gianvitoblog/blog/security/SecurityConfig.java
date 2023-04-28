@@ -49,7 +49,7 @@ public class SecurityConfig {
             .and().logout()
                 .logoutUrl("/logout")  // POST
                 .logoutSuccessUrl("/login")
-            .and() .csrf().ignoringRequestMatchers("api/**")
+            .and().csrf().ignoringRequestMatchers("api/**")
                 .and().headers()
                 .xssProtection()
                 .and().contentSecurityPolicy(

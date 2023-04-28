@@ -12,6 +12,7 @@ public class CourseDTO {
     private String teacherFirstname;
     private String teacherLastname;
     private String date;
+    private Integer numberOfStudents;
     private List<Lesson> lessons;
     private List<Student> students;
 
@@ -80,5 +81,13 @@ public class CourseDTO {
 
     public void setStudents(List<Student> students) {
         this.students = students;
+    }
+
+    public Integer getNumberOfStudents() {
+        return numberOfStudents;
+    }
+
+    public void setNumberOfStudents(Integer numberOfStudents) {
+        this.numberOfStudents = numberOfStudents;
     }
 }

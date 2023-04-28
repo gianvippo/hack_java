@@ -4,13 +4,13 @@ CREATE TABLE courses (
     description varchar(1000),
     teacher_firstname varchar(100) not null,
     teacher_lastname varchar(100) not null,
-    date DATE DEFAULT (CURRENT_DATE)
+    date DATE DEFAULT (CURRENT_DATE) not null
 );
 
 CREATE TABLE lessons (
     id BIGINT auto_increment primary key,
     description varchar(1000),
-    date DATE DEFAULT (CURRENT_DATE),
+    date DATE DEFAULT (CURRENT_DATE) not null,
     course_id BIGINT,
     foreign key (course_id) references courses(id)
 );

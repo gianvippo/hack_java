@@ -1,7 +1,10 @@
 package it.learning.learningplatform.model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import jakarta.persistence.AttributeOverride;
 import jakarta.persistence.AttributeOverrides;
@@ -42,7 +45,8 @@ public class Course {
     private LocalDate date;
 
     @OneToMany(mappedBy = "course")
-    private List<Lesson> lessons;
+    @JsonIgnoreProperties("course")
+    private List<Lesson> lessons = new ArrayList<Lesson>();
 
     @ManyToMany
     @JoinTable(
@@ -50,7 +54,8 @@ public class Course {
         joinColumns = @JoinColumn(name = "course_id", nullable = false),
         inverseJoinColumns = @JoinColumn(name = "student_id", nullable = false)
     )
-    private List<Student> students;
+    @JsonIgnoreProperties("courses")
+    private List<Student> students = new ArrayList<Student>();
 
     public List<Lesson> getLessons() {
         return lessons;

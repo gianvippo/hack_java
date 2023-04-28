@@ -21,7 +21,7 @@ public class StudentService implements CrudService {
     }
 
     @Override
-    public List readOne(Object id) {
+    public Object readOne(Object id) throws Exception {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'readOne'");
     }
@@ -33,16 +33,15 @@ public class StudentService implements CrudService {
     }
 
     @Override
-    public Object update(Object updateDTO) {
+    public Object update(Object id, Object updateDTO) throws Exception {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'update'");
     }
 
     @Override
-    public Object delete(Object id) {
+    public String delete(Object id) throws Exception {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'delete'");
     }
-
     
 }
